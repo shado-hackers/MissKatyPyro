@@ -47,8 +47,12 @@
             "required": false
         }
     },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
     "formation": {
-        "ultroid": {
+        "worker": {
             "quantity": 1,
             "size": "eco"
         }
