@@ -1,0 +1,56 @@
+{
+    "name": "Ultroid UserBot",
+    "description": "Pluggable telegram userbot, made in python using Telethon.",
+    "logo": "https://graph.org/file/031957757a4f6a5191040.jpg",
+    "keywords": [
+        "Telethon",
+        "telegram",
+        "userbot",
+        "python",
+        "ultroid"
+    ],
+    "repository": "https://github.com/shado-hackers/MissKatyPyro",
+    "website": "https://ultroid.tech",
+    "success_url": "https://t.me/TeamUltroid",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "value": "", 
+            "required": false
+        },
+        "API_HASH": {
+            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "value": "",
+            "required": false
+        },
+        "BOT_TOKEN": {
+            "description": "Session String (telethon or pyrogram) for your telegram user account. The userbot will NOT work without a session string!!",
+            "value": ""
+        },
+        "DATABASE_URI": {
+            "description": "Redis endpoint URL, from redislabs.com",
+            "value": ""
+        },
+        "LOG_CHANNEL": {
+            "description": "Redis endpoint password, from redislabs.com",
+            "value": ""
+        },
+        "DATABASE_NAME": {
+            "description": "Heroku API token. Mandatory for Heroku Deploy...",
+            "value": "",
+            "required": false
+        },
+        "GOOGEAI_KEY": {
+            "description": "Name of your Heroku app, given in the first blank on this page. To be added if deploying to heroku ONLY.",
+            "value": "",
+            "required": false
+        }
+    },
+    "formation": {
+        "ultroid": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
